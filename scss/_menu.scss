@@ -1,0 +1,49 @@
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include tab {
+        flex-direction: column;
+    }
+}
+
+.menu-item {
+    width: 26%;
+    text-align: center;
+    min-width: 236px;
+    @include tab {
+        width: 100%;
+        margin-bottom: 62px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.menu__img img{
+    width: 100%;
+    max-width: 450px;
+}
+
+.menu__content {
+    width: 92%;
+    margin: 0 auto;
+    &__title {
+        font-size: 3rem;
+        margin-top: 37px;
+        @include sp {
+            margin-top: 30px;
+            text-align: left;
+        }
+    }
+    &__desc {
+        margin: 0 auto;
+        padding: 34px 0;
+        text-align: left;
+        @include sp {
+            padding: 30px 0 26px;
+        }
+    }
+    &__price {
+        text-align: right;
+    }
+}

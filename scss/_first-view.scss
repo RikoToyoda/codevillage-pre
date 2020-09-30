@@ -1,0 +1,45 @@
+#first-v {
+    background-image: url(../img/Blond-woman-with-long-curly-beautiful-hair.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    height: 100vh;
+    position: relative;
+    @include sp {
+        position: static;
+        background-size: cover;
+    }
+}
+
+.first-v__wrap {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -25%);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include sp {
+        top: 60%;
+        left: 50%;
+        height: 20%;
+        flex-direction: column-reverse;
+        color: white;
+    }
+    .ja-catch {
+        font-family: "游明朝", serif;
+        font-size: 3.8rem;
+        @include sp {
+            font-size: 2.3rem;
+        }
+    }
+    .en-catch {
+        font-family: "Times New Roman", serif;
+        font-size: 3.8rem;
+        @include sp {
+            font-size: 2.8rem;
+        }
+    }
+}

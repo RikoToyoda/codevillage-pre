@@ -1,0 +1,62 @@
+#concept {
+    background: linear-gradient(to bottom,$beige 0%, $beige 40%,$brown 40%, $brown 100%);
+}
+
+.concept__img {
+    display: flex;
+    justify-content: space-between;
+    &-1 {
+        width: 63%;
+        height: auto;
+        overflow: hidden;
+        @include tab {
+            width: 49%;
+            height: 205px;
+        }
+        img {
+            height: 100%;
+        }
+    }
+    &-2 {
+        width: 36%;
+        height: auto;
+        overflow: hidden;
+        @include tab {
+            width: 49%;
+            height: 205px;
+        }
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.concept__content {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin: 69px auto 0;
+    @include tab {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    &__catch {
+        font-family: "游明朝", serif;
+        font-size: 40px;
+        letter-spacing: 0.4em;
+        @include tab {
+            font-size: 1.8rem;
+            padding: 50px 0 18px;
+        }
+    }
+    &__desc {
+        font-family: "メイリオ", sans-serif;
+        width: 40%;
+        @include tab {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}
